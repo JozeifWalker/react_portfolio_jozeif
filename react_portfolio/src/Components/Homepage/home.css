@@ -1,0 +1,44 @@
+*{padding: 0;
+    margin:0;
+    
+}
+
+    .mylanding{
+        max-width:100%;
+        height: 100vh;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin:25px 25px 25px 25px;
+        
+
+    }
+    .mylanding h1{
+      font-size: 50px;
+        
+    }
+   .mylanding h2{
+     font-size: 35px;
+     
+   }
+   .mylanding h3{
+      font-size: 25px;
+       
+   }
+   @media only screen 
+   and (min-width : 768px) {
+   /* Styles here */
+   .mylanding h1{
+     font-size: 100px;
+   }
+   .mylanding h2{
+     font-size:75px;
+   }
+   .mylanding h3{
+     font-size:50px;
+   }
+}
+    
