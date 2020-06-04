@@ -17,7 +17,11 @@ body{
         justify-content: center;
         text-align: center;
         margin:0px 0px 0px 0px;
-        background:#182870;
+        background-image:url(../../Images/eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: white;
 
     }
     .mylanding h1{

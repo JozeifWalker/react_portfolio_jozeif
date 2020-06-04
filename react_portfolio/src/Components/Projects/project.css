@@ -4,81 +4,80 @@
 }
 
 .project{
-height: auto;
+    max-width: 100%;
+height: 100vh;
+
+
 
 }
 .project h1{
  text-align: center;
  padding:25px;
 }
-.cards{
+.myInfoCard{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.mdc-card--outlined{
-    margin:10px;
-}
-.mdc-card__media-content img{
-    object-fit: cover; /*this makes the image in src fit to the size specified below*/
-    width: 100%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-    height: 90%;
-}
-.mdc-card__media-content h4{
-    padding:5px;
-}
-.mdc-card__actions{
+    align-items: center;
     padding:10px;
+    margin:5px 0px;
+   
 }
-.mdc-card__action-buttons{
+.flippy-container{
+    width:100%;
+    margin:5px;
+}
+.frontSide{
     padding:10px;
+    
 }
+.frontSide p{
+  text-align: center;
+  padding:5px;
+  color: white;
+  
+}
+
 @media only screen 
    and (min-width : 768px) {
-   .cards{ display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin:25px;
-    padding: 25px;
-    max-width:100%;
-   }
-   @media only screen and (min-width:1100px) {
-    img{
-        height:100%;
-        width:50%;
-    }  
-   }
-
-   }
-   .example{
-       display: flex;
-       flex-direction: column;
-       align-content: center;
-    text-align: center;
-    height: 45vh;
-    width:100%;
-    background-color: #262626;
-    border-bottom: 5px solid yellow;
-   }
-   .example h2{
-       background: black;
-       color: white;
-       padding:10px;
-       margin-bottom: 0px;
-   }
-   .group{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    padding:25px;
-    background-color: lightgrey;
-   }
-   .info{
-       float: left;
+    .myInfoCard{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:10px;
+        margin:5px 0px;
+    }
+       .myInfoCard img{
+          width: 100%;
+          height: inherit;
+          padding:20px;
+       }
+       .frontSide{
+           padding:5px;
+        align-self: center;
+       }
+       .frontSide p{
+        text-align: center;
+        padding:5px;
+        color: white;
+        margin-top:-15px;
+      }
+       
        
    }
+   @media only screen and (min-width:1200px) {
+    .myInfoCard img{
+        width: 100%;
+        height: inherit;
+        padding:20px;
+        align-items: center;
+     }
+     .flippy-container{
+         width:30%;
+     }
+   }
+
+
 
