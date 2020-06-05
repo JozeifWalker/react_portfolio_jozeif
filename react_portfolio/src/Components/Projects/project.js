@@ -14,6 +14,8 @@ import { GrMysql as MYSQL } from "react-icons/gr";
 import { RiReactjsLine as ReactIcon } from "react-icons/ri";
 import { FaNodeJs as NodeIcon } from "react-icons/fa";
 import { DiMongodb as MongoIcon } from "react-icons/di";
+import { FcAndroidOs as AndroidIcon } from "react-icons/fc";
+import { Button } from 'carbon-components-react';
 class Project extends Component {
     render() {
         return (
@@ -38,14 +40,20 @@ class Project extends Component {
                             <img src={drone} width="100%" height="auto" alt='drone inventory' />
                             <p>Tap For Details</p>
                         </FrontSide>
-                        <BackSide
+                        <BackSide className="backSide"
                             style={{ backgroundColor: '#175852', color: 'white' }}>
-                            <h1>Drone Inventory Tracker</h1>
-                            <p>Full Stack web application drone inventory tracker.
+                            <h2 className="backSide-title">Drone Inventory Tracker</h2>
+                            <p className="backSide-info">Full Stack web application drone inventory tracker.
                             Allows logged in users to perform CRUD operations within the dashboard.<br></br>
                             Front End : HTML<Html />/CSS<CSS /> <br></br>
                             Back end : Java<Java /> <br></br>
                             Database : MYSQL <MYSQL /></p>
+                            <div className="demos">
+                                <p href="">View Code</p>
+                                <p href="">View Demo</p>
+                            </div>
+
+
 
                         </BackSide>
                     </Flippy>
@@ -94,8 +102,8 @@ class Project extends Component {
                         </FrontSide>
                         <BackSide
                             style={{ backgroundColor: '#175852', color: 'white' }}>
-                            <h1>Employee Login and Database</h1>
-                            <p>Allows a user to login or either register as a user to perform CRUD operations on a database through the UI.
+                            <h2 className="backSide-title">Employee Login and Database</h2>
+                            <p className="backSide-info">Allows a user to login or either register as a user to perform CRUD operations on a database through the UI.
                                 <br></br>Front End : ReactJS <ReactIcon />
                                 <br></br>Back End : ExpressJS/NodeJS <NodeIcon />
                                 <br></br> Database: MongoDB<MongoIcon />
@@ -122,8 +130,12 @@ class Project extends Component {
                             <p>Tap For Details</p>
                         </FrontSide>
                         <BackSide
-                            style={{ backgroundColor: '#175852' }}> Stuff
-
+                            style={{ backgroundColor: '#175852', color: 'white' }}>
+                            <h2 className="backSide-title">Galactic Codex</h2>
+                            <p className="backSide-info">This is a mobile Android application that engages and teaches students about the wonders of the Solar System.
+                            Through an interactive and engaging UI built for Android.
+                            <br></br>Front End : XML
+                            <br></br>Back End: Java(Android lib)<AndroidIcon /></p>
                         </BackSide>
                     </Flippy>
 
@@ -145,7 +157,12 @@ class Project extends Component {
                             <p>Tap For Details</p>
                         </FrontSide>
                         <BackSide
-                            style={{ backgroundColor: '#175852' }}> Stuff
+                            style={{ backgroundColor: '#175852', color: 'white' }}>
+                            <h2 className="backSide-title">Electric Charger Locator</h2>
+                            <p className="backSide-info">This application utilizes RESTful API and makes GET requests that return and render an updated list
+                            with the available chargers, locations of the chargers, and the timestamp that the data was accessed from the server.
+                            <br></br>Front End : XML
+                            <br></br>Back End: Java(Android lib)<AndroidIcon /></p>
 
                         </BackSide>
                     </Flippy>
