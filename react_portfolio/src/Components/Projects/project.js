@@ -41,7 +41,7 @@ class Project extends Component {
                             <p>Tap For Details</p>
                         </FrontSide>
                         <BackSide className="backSide"
-                            style={{ backgroundColor: '#175852', color: 'white' }}>
+                            style={{ backgroundColor: '#852b1b', color: 'white' }}>
                             <h2 className="backSide-title">Drone Inventory Tracker</h2>
                             <p className="backSide-info">Full Stack web application drone inventory tracker.
                             Allows logged in users to perform CRUD operations within the dashboard.<br></br>
@@ -49,8 +49,8 @@ class Project extends Component {
                             Back end : Java<Java /> <br></br>
                             Database : MYSQL <MYSQL /></p>
                             <div className="demos">
-                                <p href="">View Code</p>
-                                <p href="">View Demo</p>
+                                <a href="https://github.com/JozeifWalker/Walker-Web-Development-Final-Project.git" target="_blank">View Code</a>
+                                <a href="https://youtu.be/8HCpQl7tC3A" target="_blank">View Demo</a>
                             </div>
 
 
@@ -101,14 +101,17 @@ class Project extends Component {
                             <p>Tap For Details</p>
                         </FrontSide>
                         <BackSide
-                            style={{ backgroundColor: '#175852', color: 'white' }}>
+                            style={{ backgroundColor: '#16296b', color: 'white' }}>
                             <h2 className="backSide-title">Employee Login and Database</h2>
                             <p className="backSide-info">Allows a user to login or either register as a user to perform CRUD operations on a database through the UI.
                                 <br></br>Front End : ReactJS <ReactIcon />
                                 <br></br>Back End : ExpressJS/NodeJS <NodeIcon />
                                 <br></br> Database: MongoDB<MongoIcon />
                             </p>
-
+                            <div className="demos">
+                                <a href="https://github.com/JozeifWalker/Employee-Login-and-Database.git" target="_blank">View Code</a>
+                                <a href=" https://youtu.be/c_YRqr9ADzQ" target="_blank">View Demo</a>
+                            </div>
                         </BackSide>
                     </Flippy>
 
@@ -136,6 +139,10 @@ class Project extends Component {
                             Through an interactive and engaging UI built for Android.
                             <br></br>Front End : XML
                             <br></br>Back End: Java(Android lib)<AndroidIcon /></p>
+                            <div className="demos">
+                                <a href="https://github.com/JozeifWalker/Capstone-Project-Our-Solar-System.git" target="_blank">View Code</a>
+                                <a href="https://youtu.be/0k6wHxbi8Z8" target="_blank">View Demo</a>
+                            </div>
                         </BackSide>
                     </Flippy>
 
@@ -157,12 +164,16 @@ class Project extends Component {
                             <p>Tap For Details</p>
                         </FrontSide>
                         <BackSide
-                            style={{ backgroundColor: '#175852', color: 'white' }}>
+                            style={{ backgroundColor: '#16296b', color: 'white' }}>
                             <h2 className="backSide-title">Electric Charger Locator</h2>
                             <p className="backSide-info">This application utilizes RESTful API and makes GET requests that return and render an updated list
                             with the available chargers, locations of the chargers, and the timestamp that the data was accessed from the server.
                             <br></br>Front End : XML
                             <br></br>Back End: Java(Android lib)<AndroidIcon /></p>
+                            <div className="demos">
+                                <a href="https://github.com/JozeifWalker/Walker_Assignment6_ElectricCharging.git" target="_blank">View Code</a>
+                                <a href="https://youtu.be/fjfHhE0xUvc" target="_blank">View Demo</a>
+                            </div>
 
                         </BackSide>
                     </Flippy>
