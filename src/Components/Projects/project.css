@@ -38,6 +38,36 @@ height: 100vh;
   
 }
 
+.backSide-title{
+    font-size: 20px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+.backSide-info{
+   font-size: 15px;
+}
+.myButton{
+    background-color: #171e58;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 20%;
+}
+.demos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+     
+}
+.demos a{
+    color: white;
+}
+.demos a:visited{
+    color: white;
+}
+
 @media only screen 
    and (min-width : 768px) {
     .myInfoCard{
@@ -45,9 +75,12 @@ height: 100vh;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         padding:10px;
         margin:5px 0px;
+    }
+    .myInfoCard>*{
+        flex: 1 1 925px;
     }
        .myInfoCard img{
           width: 100%;
@@ -64,18 +97,43 @@ height: 100vh;
         color: white;
         margin-top:-15px;
       }
+      .backSide-title{
+        font-size: 50px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .backSide-info{
+        font-size: 25px;
+     }
+     .demos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        font-size: 30px;
+         
+    }
        
        
    }
    @media only screen and (min-width:1200px) {
     .myInfoCard img{
         width: 100%;
-        height: inherit;
+        height: 425px;
         padding:20px;
         align-items: center;
      }
      .flippy-container{
          width:30%;
+     }
+     .backSide-title{
+        font-size: 50px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+     .backSide-info{
+        font-size: 25px;
      }
    }
 

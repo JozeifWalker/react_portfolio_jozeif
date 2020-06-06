@@ -7,10 +7,12 @@ margin:0;}
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-overflow-x: hidden;
-background-color: black;
-color: white;
-top:0%;
+    overflow-x: hidden;
+    background-color: black;
+    border-bottom: 5px solid grey;
+    color: white;
+    top:0%;
+    align-content: center;
 }
 .navbar h1{
     
@@ -52,7 +54,8 @@ li{
     width: 26px;
     height: 20px;
     left: 18px;
-    top: 40px;
+    top: 33.3px;
+    align-self: center;
   }
   
   /* Color/shape of burger icon bars */
