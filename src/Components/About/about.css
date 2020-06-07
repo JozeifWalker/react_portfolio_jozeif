@@ -6,7 +6,9 @@
         width:100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;      
+        justify-content: center; 
+        align-items: center;     
+        height: 100vh;
 }
 .aboutme-wrapper img{
     padding:0px 0px 15px 0px;
@@ -22,22 +24,39 @@
     margin:0px 5px 0px 5px;
     padding: 0px 15px 0px 15px;
     text-align: justify;
+    align-self: center;
 }
 span{
-    font-size: 30px;
+    font-size: 50px;
+    color: blue;
 }
 .skillTitle{
     font-size: 30px;
 }
-svg .reactIc{
-    fill: black;
-    height: 55px;
-    width: 55px;
-    align-self: flex-start;
-    margin:0px 5px 0px 5px;
-    
 
+.skillTitle{
+    font-size: 40px;
+    font-weight: lighter;
+    line-height: 5rem;
+    align-self: center; 
+    padding: 10px;
 }
+.skillSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.skillCards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+} 
+.skillCard1{
+    width: 75%;
+}
+
 
 
 /*media styles for larger screens*/
@@ -62,7 +81,16 @@ svg .reactIc{
    .aboutme-wrapper h2{
        font-size: 50px;
        padding: 25px;
-   }  /* end of media styles for larger screens*/
+   }
+   .skillCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+ /* end of media styles for larger screens*/
 }
 
 
