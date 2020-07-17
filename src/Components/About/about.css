@@ -26,7 +26,7 @@
     text-align: justify;
     align-self: center;
 }
-span{
+.aboutme-wrapper-header{
     font-size: 50px;
     color: blue;
 }
@@ -55,6 +55,9 @@ span{
 } 
 .skillCard1{
     width: 75%;
+}
+.aboutme-wrapper-secondHeader{
+    font-size: 35px;
 }
 
 

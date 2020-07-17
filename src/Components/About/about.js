@@ -24,9 +24,9 @@ class About extends Component {
             <div className="aboutme">
                 <div className="aboutme-wrapper">
                     <img src={jozeif} width="400px" height="400px"></img>
-                    <p> <span>Jozeif Walker</span>
-                        <br></br> Application Developer at IBM
-                    <br></br>Whether it's a mobile app or website, native or hybrid, enterprise or personal an exciting journey of discovery,creativity and innovation  awaits.
+                    <p> <span className="aboutme-wrapper-header">Jozeif Walker</span>
+                        <br></br><span className="aboutme-wrapper-secondHeader">I'm an Application Developer at IBM from Lawrenceville,GA.</span>
+                        <br></br>Whether it's a mobile app or website, native or hybrid, enterprise or personal an exciting journey of discovery,creativity and innovation  awaits.
                     <br></br>Let's work together!</p>
                 </div>
                 <div className="skillSection">
