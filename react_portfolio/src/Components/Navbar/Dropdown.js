@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { slide as Menu } from 'react-burger-menu';
 import { FiHome as HomeIcon } from "react-icons/fi";
 import { FiCode as CodeIcon } from "react-icons/fi";
@@ -10,10 +10,10 @@ export default props => {
     return (
 
         <Menu{...props}>
-            <a id="home" className="menu-item" href="/"><HomeIcon />Home</a>
-            <a id="about" className="menu-item" href="/about"><UserIcon />About</a>
-            <a id="work" className="menu-item" href="/projects"><CodeIcon />Projects</a>
-            <a id="contact" className="menu-item" href="/contact"><ContactIcon />Contact</a>
+            <a href="/" id="home" className="menu-item"  ><HomeIcon />Home</a>
+            <a href="/about" id="about" className="menu-item" ><UserIcon />About</a>
+            <a href="/projects" id="work" className="menu-item" ><CodeIcon />Projects</a>
+            <a href="/contact" id="contact" className="menu-item" ><ContactIcon />Contact</a>
         </Menu>
     );
 };

@@ -1,61 +1,52 @@
 *{padding: 0;
 margin:0;}
+
 .title-bar{
     max-width: 100%;
+    
 }
 .navbar{
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     overflow-x: hidden;
-    background-color: black;
-    border-bottom: 5px solid grey;
+    background-color: rgba(0, 0, 0, 1.0);
     color: white;
-    top:0%;
     align-content: center;
+    height: auto;
 }
 .navbar h1{
     
-    font-size:35px;
-    padding:10px;
+    font-size:20px;
+    padding:5px;
+}
+.desktop-nav{
+  display: none;
+  
 }
 ul{
-    display: flex;
-    margin: 10px;
+    margin: 5px;
 }
-li{
+#link{
     list-style-type: none;
     text-decoration: none;
-    padding:10px;
+    padding:5px;
+    color: white;
 }
+
 .aboutme-wrapper{
     text-align: center;
 }
-@media only screen 
-   and (min-width : 768px) {
-   /* Styles here */
-   .navbar h1{
-       font-size: 50px;
-   }
-   
-   ul{
-       display: flex;
-   }
-   li{
-       font-size:30px;
-       padding:20px;
-   }
-}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
-    display:flex;
-    flex-direction: row;
+    align-self: center;
     position: absolute;
     width: 26px;
-    height: 20px;
-    left: 18px;
-    top: 33.3px;
-    align-self: center;
+    height: 15px;
+    left: 16px;
+    top: 16px;
+
   }
   
   /* Color/shape of burger icon bars */
@@ -138,6 +129,48 @@ li{
   .code{
       fill: white;
   }
+  @media only screen 
+   and (min-width : 768px) {
+   /* Styles here */
+   .navbar h1{
+       font-size: 30px;
+   }
+   
+   ul{
+       display: flex;
+   }
+   li{
+       font-size:20px;
+       padding:0px 20px;
+   }
+}
+  @media screen and (min-width: 1281px) and (max-width: 1440px) {
+    .desktop-nav{
+      display: flex;
+    }
+    .bm-burger-button {
+    
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .desktop-nav{
+      display: flex;
+    }
+    .bm-burger-button {
+      
+      display: none;
+    }
 
-
+  }
+  @media screen and (min-width:2560px){
+    .desktop-nav{
+      display: flex;
+    }
+    .bm-burger-button {
+      
+      display: none;
+    }
+  }
 

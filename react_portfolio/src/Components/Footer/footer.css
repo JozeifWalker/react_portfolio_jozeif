@@ -1,9 +1,15 @@
 *{margin: 0;
 padding:0;}
-footer{
+.footer-wrapper{
+    height: auto;
     padding:10px;
     width:100%;
     background-color: black;
     color: white;
     text-align: center;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }

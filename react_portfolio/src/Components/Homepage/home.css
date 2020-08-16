@@ -1,45 +1,42 @@
 *{padding: 0;
-    margin:0;
-    
+    margin:0;   
     
 }
-body{
-  
-}
-
-    .mylanding{
-        max-width:100%;
-        height: 100vh;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin:0px 0px 0px 0px;
+.mylanding{
+    
         background-image:url(../../Images/eberhard-grossgasteiger-y2azHvupCVo-unsplash.jpg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        color: white;
-
+}
+    
+    .landing-title{
+      max-width:100%;
+      min-height: 100vh;
+      display: flex;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin:0px 0px 0px 0px;
+      color: white;
+      
     }
-    .mylanding h1{
+    .landing-title h1{
       font-size: 50px;
       
       
         
     }
-   .mylanding h2{
+   .landing-title h2{
      font-size: 35px;
     
      
    }
-   .mylanding h3{
-      font-size: 25px;
-      
-  
-       
+   .landing-title h3{
+      font-size: 25px;   
+      align-self: center;
+      margin-left: 0px;
    }
    @media only screen 
    and (min-width : 768px) {

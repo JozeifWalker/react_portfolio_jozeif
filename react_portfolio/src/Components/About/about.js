@@ -1,167 +1,80 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+
+
 import "./about.css";
 import jozeif from "../../Images/jozeifwbw.png";
-import Flippy, { FrontSide, BackSide } from 'react-flippy';
-import { GrReactjs as ReactIcon } from "react-icons/gr"
-import { AiOutlineHtml5 as Html } from "react-icons/ai";
-import { IoLogoCss3 as CSS } from "react-icons/io";
-import { FaJava as Java } from "react-icons/fa";
-import { GrMysql as MYSQL } from "react-icons/gr";
-import { FaNodeJs as NodeIcon } from "react-icons/fa";
-import { DiMongodb as MongoIcon } from "react-icons/di";
-import { FcAndroidOs as AndroidIcon } from "react-icons/fc";
-import android from "../../Images/android.png";
-import java from "../../Images/java.png"
-import nodejs from "../../Images/nodejstransparent.png"
-import react from "../../Images/reacttransparent.png"
-import mysql from "../../Images/mysqltransparent.png"
-import mongo from "../../Images/mongodbtransparent.png"
+
+import { BsCodeSlash } from 'react-icons/bs';
+import { BsServer } from 'react-icons/bs';
+import { BsWrench } from 'react-icons/bs';
+
+
 
 class About extends Component {
     render() {
         return (
             <div className="aboutme">
-                <div className="aboutme-wrapper">
-                    <img src={jozeif} width="400px" height="400px"></img>
-                    <p> <span>Jozeif Walker</span>
-                        <br></br> Application Developer at IBM
-                    <br></br>Whether it's a mobile app or website, native or hybrid, enterprise or personal an exciting journey of discovery,creativity and innovation  awaits.
-                    <br></br>Let's work together!</p>
+                <div className="about-title-bar">
+                    <h1>About</h1>
                 </div>
+
+
+                <div className="wrapper"><img src={jozeif} id="jozeif" alt=" Courtesy of Frank Baker Jr." /></div>
+                <div className="aboutme-wrapper">
+                    <h2>Jozeif Walker</h2>
+                    <h3>Application Developer at <span id="ibm">IBM</span></h3>
+                    <p> Jozeif Walker is a developer who values the marriage of creativity and expression with the beauty of technical application. An application developer
+                    at IBM, Jozeif has successfully merged the creative and technical, into products that provides value to  clients. He is constantly learning
+                    new technologies and skills to apply to any given situation. From mobile to desktop, iOS to Android, React to Angular, Jozeif  can deliver!
+                        </p>
+                </div>
+
+
                 <div className="skillSection">
-                    <h3 className="skillTitle">Skills</h3>
-                    <div className="skillCards">
+                    <h3 className="skillTitle">Skill Overview</h3>
 
-                        {/* Start  of MongoDB Card */}
-                        <Flippy className="skillCard1"
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide
-                                style={{ backgroundColor: '#257817', color: 'white', textAlign: 'center' }}>
-                                <h4>MongoDB</h4>
-                                <img src={mongo} width="200px" height="170px"></img>
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>MongoDB is a cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
-                                </p>
-                            </BackSide>
-                        </Flippy>
-                        {/* End of MongoDB Card */}
+                    <BsCodeSlash id="codeIcon" />
+                    <div className="skillsect-card">
+                        <h2>Front End</h2>
+                        <ul id="skillsect-list" >
+                            <li>React/Redux</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>XML(Android)</li>
+                        </ul>
+                    </div>
 
-                        <Flippy
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide
-                                style={{ backgroundColor: '#c7bb33', color: 'white', textAlign: 'center' }}>
-                                <h4>ExpressJS</h4>
+                    <BsServer id="backEndIcon" />
+                    <div className="skillsect-card--1">
+                        <h2>Back End</h2>
+                        <ul id="skillsect-list" >
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>ExpressJS</li>
+                            <li>NodeJS</li>
+                            <li>Java</li>
+                            <li>Android(Java)</li>
+                        </ul>
+                    </div>
+                    <BsWrench id="OtherIcon" />
+                    <div className="skillsect-card--2">
 
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>Express.js, or simply Express, is a web application framework for Node.js.
-                                     It is designed for building web applications and APIs.</p>
-                            </BackSide>
-                        </Flippy>
+                        <h2>Other</h2>
+                        <ul id="skillsect-list" >
 
-                        <Flippy
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide
-                                style={{ backgroundColor: '#00000', color: '#48c9b8', textAlign: 'center' }}>
-                                <h4>ReactJS</h4>
-                                <img src={react} width="200px" height="170px"></img>
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>React is an open-source JavaScript library for building user interfaces.
-                                   React can be used as a base in the development of single-page or mobile applications</p>
-                            </BackSide>
-                        </Flippy>
+                            <li>Adobe XD</li>
+                            <li>InVision</li>
+                            <li>GitHub</li>
+                            <li>Microsoft Technology Associate Certification</li>
+                            <li>CompTia Cloud Essentials Certification</li>
 
-                        <Flippy
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white', textAlign: 'center' }}>
-                                <h4>NodeJS</h4>
-                                <img src={nodejs} width="200px" height="170px"></img>
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>Node.js is an open-source, cross-platform, JavaScript runtime environment that executes JavaScript code outside a web browser.</p>
-                            </BackSide>
-                        </Flippy>
+                        </ul>
 
-                        <Flippy
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide
-                                style={{ backgroundColor: '#00000', color: 'red', textAlign: 'center' }}>
-                                <h4>Java</h4>
-                                <img src={java} width="200px" height="170px"></img>
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>Java is a general-purpose programming language that is class-based, object-oriented,
-                                         and designed to have as few implementation dependencies as possible</p>
-                            </BackSide>
-                        </Flippy>
-
-                        <Flippy
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide className="androidCard"
-                                style={{ textAlign: 'center', backgroundColor: '#00000', color: 'green' }}>
-                                <h4>Android</h4>
-                                <img src={android} width="185px" height="170px"></img>
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>Android is a mobile operating system
-                                   designed primarily for touchscreen mobile devices such as smartphones and tablets</p>
-                            </BackSide>
-                        </Flippy>
-
-                        <Flippy
-                            flipOnHover={true} // default false
-                            flipOnClick={false} // default false
-                            flipDirection="vertical" // horizontal or vertical
-                            ref={(r) => this.flippy = r}
-                            style={{ height: '225px', width: '225px' }} >
-                            <FrontSide
-                                style={{ backgroundColor: '#00000', color: '#314cff', textAlign: 'center' }}>
-                                <h4>MySQL</h4>
-                                <img src={mysql} width="200px" height="170px"></img>
-                            </FrontSide>
-                            <BackSide
-                                style={{ backgroundColor: 'rgba(22, 22, 22, 1.0)', color: 'white' }}>
-                                <p>MySQL is an open-source relational database management system.</p>
-                            </BackSide>
-                        </Flippy>
 
                     </div>
-                </div>
 
+
+                </div>
 
             </div>
 

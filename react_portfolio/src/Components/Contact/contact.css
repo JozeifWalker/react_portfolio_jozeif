@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    padding: '15px'
+   
+}
+.contact-title-bar{
+    background-color: #000000;
+    height: 30vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+.contact-title-bar h1{
+    margin-left: 16px;
+}

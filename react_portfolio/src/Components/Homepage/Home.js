@@ -1,12 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom";
-import {
-    Breadcrumb,
-    BreadcrumbItem,
-    Button,
-    Tabs,
-    Tab,
-} from "carbon-components-react";
 import './home.css';
 
 class Home extends Component {
@@ -14,11 +6,19 @@ class Home extends Component {
         return (
             <div className="mylanding">
 
-                <h1>DEVELOPER.</h1>
 
-                <h2>DESIGNER.</h2>
+                <div className="landing-title">
 
-                <h3>CREATOR.</h3>
+                    <h1>DEVELOPER.</h1>
+
+                    <h2>DESIGNER.</h2>
+
+                    <h3>CREATOR.</h3>
+
+                </div>
+
+
+
 
             </div>
 
