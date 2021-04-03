@@ -22,11 +22,7 @@ class About extends Component {
                 <div className="wrapper"><img src={jozeif} id="jozeif" alt=" Courtesy of Frank Baker Jr." /></div>
                 <div className="aboutme-wrapper">
                     <h2>Jozeif Walker</h2>
-                    <h3>Application Developer at <span id="ibm">IBM</span></h3>
-                    <p> Jozeif Walker is a developer who values the marriage of creativity and expression with the beauty of technical application. An application developer
-                    at IBM, Jozeif has successfully merged the creative and technical, into products that provides value to  clients. He is constantly learning
-                    new technologies and skills to apply to any given situation. From mobile to desktop, iOS to Android, React to Angular, Jozeif  can deliver!
-                        </p>
+                    <h3>Application Developer</h3>
                 </div>
 
 

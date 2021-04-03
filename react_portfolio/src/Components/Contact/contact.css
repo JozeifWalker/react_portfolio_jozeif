@@ -23,4 +23,10 @@
 }
 .contact-title-bar h1{
     margin-left: 16px;
+    
+}
+@media screen and (min-width:1200px){
+.contact-title-bar h1{
+    font-size:65px;
+}
 }

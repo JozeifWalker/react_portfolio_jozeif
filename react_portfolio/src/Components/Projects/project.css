@@ -6,7 +6,7 @@
 .project{
     max-width: 100%;
     background-color: black;
-    height: auto;
+    min-height: 100vh;
    
 }
 .project-title-bar{
@@ -29,7 +29,17 @@
     background: #161616;
     padding:10px;
     margin:10px 10px 0px 10px;
-    height: auto;
+    min-height: 100vh;
+}
+.myInfoCard--client{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: #161616;
+    padding:10px;
+    margin:10px 10px 0px 10px;
+    min-height: 100vh;
 }
 
 .col{
@@ -43,15 +53,26 @@
  
 
 @media only screen 
-   and (min-width : 768px) {
+   and (max-width : 768px) {
     .myInfoCard{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        background: #161616;
         padding:10px;
         margin:10px 10px 0px 10px;
-        height: auto;
+        min-height: 100vh;
+    }
+    .myInfoCard--client{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: #161616;
+        padding:10px;
+        margin:10px 10px 0px 10px;
+        min-height: 100vh;
     }
     .col{
         width:50%;
@@ -77,7 +98,17 @@
         background: #161616;
         padding:10px;
         margin:20px 20px 0px 20px;
-        height: auto;
+        min-height: 100vh;
+    }
+    .myInfoCard--client{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        background: #161616;
+        padding:10px;
+        margin:20px 20px 0px 20px;
+        min-height: 100vh;
     }
     .project-title-bar h1{
         font-size:65px;

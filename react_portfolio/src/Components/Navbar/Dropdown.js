@@ -4,8 +4,9 @@ import { FiHome as HomeIcon } from "react-icons/fi";
 import { FiCode as CodeIcon } from "react-icons/fi";
 import { FiUser as UserIcon } from "react-icons/fi";
 import { FiMessageSquare as ContactIcon } from "react-icons/fi";
+
 import './Navbar.css';
-export default props => {
+export default  props => {
     // NOTE: You also need to provide styles, see https://github.com/negomi/react-burger-menu#styling
     return (
 
