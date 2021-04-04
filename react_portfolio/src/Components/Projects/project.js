@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import './project.css'
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
 
-import Tabs from 'react-bootstrap/Tabs';
-import Tab from 'react-bootstrap/Tab';
-
-import creativephotography from '../../Images/Home.PNG';
 
 class Project extends Component {
     render() {
@@ -16,35 +12,7 @@ class Project extends Component {
                     <h1>Projects</h1>
                 </div>
 
-
-                <Tabs defaultActiveKey="Client Projects" id="uncontrolled-tab-example">
-                    <Tab eventKey="Client Projects" title="Client Projects">
-                        <div className="myInfoCard--client" >
-
-
-
-
-
-
-
-                            <MDBCol >
-                                <MDBCard style={{ backgroundColor: '#262626', color: 'white' }} narrow  >
-                                    <MDBCardImage className="img-fluid" src={creativephotography} alt=" Creative Equations Photography Website" waves />
-                                    <MDBCardBody style={{ height: 'auto' }} >
-                                        <MDBCardTitle>Creative Equations Photography</MDBCardTitle>
-                                        <MDBCardText>
-                                            Creative Equations Photography is a website built for a small business which specializes in photography. Based in San Antonio,Texas.
-                                            Built in ReactJS
-                                           </MDBCardText>
-
-                                        <MDBBtn href="https://priceless-bassi-c10403.netlify.app/" target="_blank">View Site</MDBBtn>
-                                    </MDBCardBody>
-                                </MDBCard>
-                            </MDBCol>
-
-                        </div>
-                    </Tab>
-                    <Tab eventKey="Personal Projects" title="Personal Projects">
+                  
                         <div className="myInfoCard">
 
 
@@ -95,11 +63,7 @@ class Project extends Component {
                                 </MDBCard>
                             </MDBCol>
                         </div>
-                    </Tab>
-
-
-                </Tabs>
-
+              
 
 
 

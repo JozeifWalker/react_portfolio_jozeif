@@ -10,8 +10,9 @@ class Footer extends Component {
             <div className="footer-wrapper">
 
 
-                <p>&copy; Copyright Jozeif Walker 2020</p>
-                <p><a href="https://www.instagram.com/jozeifw_/" target="_blank" rel="noopener noreferrer"> <FaInstagram style={{ fontSize: "20px", marginRight: '5px' }} /></a>
+                <p>&copy; Copyright Jozeif Walker 2021</p>
+                <div className="divider"></div>
+                <p><a href="https://www.instagram.com/jo_n_zeif/" target="_blank" rel="noopener noreferrer"> <FaInstagram style={{ fontSize: "20px", marginRight: '5px' }} /></a>
                     <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><GrGithub style={{ fontSize: "20px", marginRight: '5px' }} /></a>
                     <a href="https://www.linkedin.com/in/jozeif-walker-72299834/" target="_blank" rel="noopener noreferrer"><GrLinkedin style={{ fontSize: "20px", marginRight: '5px' }} /></a> </p>
 

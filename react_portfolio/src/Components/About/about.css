@@ -1,336 +1,310 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-#ibm{
-    color: blue;
-}
-
-.about-title-bar{
-    background-color: #000000;
-    height: 30vh;
-    color: white;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start; 
-    align-items: flex-start;    
-}
-.about-title-bar h1{
-    margin-left: 16px;
+#ibm {
+  color: blue;
 }
 
-.aboutme-wrapper{
-        display: flex;
-        flex-direction: column;
-        justify-content: center; 
-        align-items: center;     
-        height: auto;
-        background:#262626;
-        color: white;
+.about-title-bar {
+  background-color: #000000;
+  height: 20vh;
+  color: white;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center;     
-    height: auto; 
-    background:#262626;
-}
-#jozeif{
-    height: 225px;
-    width: 225px;
-}
-.aboutme-wrapper h2,.aboutme-wrapper h3{
-    margin-top:26px;
-}
-.aboutme-wrapper h3{
-    font-size: 18px;
+.about-title-bar h1 {
+  margin-left: 16px;
 }
 
+.aboutme-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #262626;
+  color: white;
+  padding: 1rem 0rem;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  background: #262626;
+}
+#jozeif {
+  height: 225px;
+  width: 225px;
+}
+
+.aboutme-wrapper h3 {
+  font-size: 18px;
+}
 
 .aboutme-wrapper p {
-    text-align: justify;
-    align-self: center;
-    padding: 16px;
-    
+  text-align: justify;
+  align-self: center;
+  padding: 16px;
 }
 
-.skillTitle{
-    font-size: 40px;
-    font-weight: lighter;
-    line-height: 5rem;
-    align-self: flex-start; 
-    padding: 10px;
-    color: white;
-    margin: 16px;
+.skillTitle {
+  font-size: 40px;
+  font-weight: lighter;
+  line-height: 5rem;
+  align-self: flex-start;
+  padding: 10px;
+  color: white;
+  margin: 16px;
 }
-.skillSection{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #262626;
-    height: auto;
-    width: 100%;
-    
+.skillSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+  height: auto;
+  width: 100%;
+  padding: 0rem 1rem 0rem 1rem;
 }
-#skillsect-list{
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    list-style-type: none;
+#skillsect-list {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  list-style-type: none;
 }
-#skillsect-list li{
-    align-self: flex-start;
-    padding: 10px;
+#skillsect-list li {
+  align-self: flex-start;
+  padding: 10px;
 }
-.skillsect-card{
-    width: 90%;
-    height: 425px;
-    background: #363636;
-    margin: 10px 0px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    color: white;
-}
-
-.skillsect-card h2{
-    margin: 20px 0px;
-}
-#codeIcon{
-    margin: 20px 0px -45px 0px; 
-    z-index: 2;
-    padding: 10px;
-    font-size: 60px;
-    color: white;
-    background: blue;
-    border-radius: 100%;
-    
-}
-#backEndIcon{
-    margin: 20px 0px -45px 0px; 
-    z-index: 2;
-    padding: 10px;
-    font-size: 60px;
-    color: white;
-    background: blue;
-    border-radius: 100%;
-    
-}
-.skillsect-card--1{
-    width: 90%;
-    height: 425px;
-    background: #363636;
-    color: white;
-    margin: 20px 0px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-.skillsect-card--1 h2{
-    margin: 0px 0px;
-}
-#OtherIcon{
-    margin: 20px 0px -45px 0px; 
-    z-index: 2;
-    padding: 10px;
-    font-size: 60px;
-    color: white;
-    background: blue;
-    border-radius: 100%;
-    
-}
-.skillsect-card--2{
-    width: 90%;
-    height: 425px;
-    background: #363636;
-    color: white;
-    margin: 20px 0px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-}
-.skillsect-card--2 h2{
-    margin: 20px 0px;
+.bx--tile.skillsect-card {
+  width: 100%;
+  height: 325px;
+  background: #363636 !important;
+  padding: 20px;
+  margin: 1rem 0rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
+.skillsect-card h2 {
+  text-align: left;
+}
+#codeIcon {
+  margin: 20px 0px -45px 0px;
+  z-index: 2;
+  padding: 10px;
+  font-size: 60px;
+  color: white;
+  background: blue;
+  border-radius: 100%;
+}
 
+.bx--tile.skillsect-card--1 {
+  width: 100%;
+  height: 325px;
+  background: #363636 !important;
+  color: white;
+  margin-top: 1rem 0rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bx--tile.skillsect-card--2 {
+  width: 100%;
+  height: 325px;
+  background: #363636 !important;
+  color: white;
+  margin-top: 1rem 0rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+#OtherIcon {
+  margin: 20px 0px -45px 0px;
+  z-index: 2;
+  padding: 10px;
+  font-size: 60px;
+  color: white;
+  background: blue;
+  border-radius: 100%;
+}
 
 /*media styles for larger screens*/
-@media only screen 
-   and (min-width : 768px) {
-   /* Styles here */
+@media only screen and (min-width: 768px) {
+  /* Styles here */
 
-.aboutme-wrapper h2{
+  .aboutme-wrapper h2 {
     font-size: 50px;
-}
-.aboutme-wrapper h3{
+  }
+  .aboutme-wrapper h3 {
     font-size: 30px;
-}
-.aboutme-wrapper p{
+  }
+  .aboutme-wrapper p {
     font-size: 25px;
-}
-.about-title-bar h1{
-   font-size: 65px; 
-}
+  }
+  .about-title-bar h1 {
+    font-size: 65px;
+  }
 
-
-
- 
-
-@media only screen and (min-width:1281px) and (max-width:1440px){
-    .aboutme-wrapper{
-        float: left;
-        height: 70vh;
-        width: 50%;
+  @media only screen and (min-width: 1281px) and (max-width: 1440px) {
+    .aboutme-wrapper {
+      float: left;
+      height: 70vh;
+      width: 50%;
     }
-    .wrapper{
+    .wrapper {
       float: right;
       height: 70vh;
-      width: 50%; 
+      width: 50%;
     }
-   #jozeif{
-       height: 425px;
-       width: 425px;
-       display: flex;
-   }
-    .aboutme-wrapper p{
-        align-self: flex-start;
-        
-        
+    #jozeif {
+      height: 425px;
+      width: 425px;
+      display: flex;
     }
-    .aboutme-wrapper h2, .aboutme-wrapper h3{
-        align-self: flex-start;
-        margin-left: 16px;
+    .aboutme-wrapper p {
+      align-self: flex-start;
     }
-    .aboutme-wrapper h2{
-        font-size: 70px;
+    .aboutme-wrapper h2,
+    .aboutme-wrapper h3 {
+      align-self: flex-start;
+      margin-left: 16px;
     }
-    .aboutme-wrapper h3{
-        font-size: 50px;
+    .aboutme-wrapper h2 {
+      font-size: 70px;
     }
-    #skillsect-list{
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        
+    .aboutme-wrapper h3 {
+      font-size: 50px;
     }
-}
- 
-@media screen and (min-width: 1441px) and (max-width: 1920px) {
-    
-    .aboutme-wrapper{
-        float: left;
-        height: 70vh;
-        width: 50%;
+    #skillsect-list {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
     }
-    .wrapper{
+    .skillSection {
+      flex-direction: row;
+    }
+    .skillsect-card--1 {
+      margin-top: 0rem;
+    }
+  }
+
+  @media screen and (min-width: 1441px) and (max-width: 1920px) {
+    .aboutme-wrapper {
+      float: left;
+      height: 70vh;
+      width: 50%;
+    }
+    .wrapper {
       float: right;
       height: 70vh;
-      width: 50%; 
+      width: 50%;
     }
-   #jozeif{
-       height: 425px;
-       width: 425px;
-       display: flex;
-   }
-  
-    .aboutme-wrapper p{
-        align-self: flex-start;
-        
+    #jozeif {
+      height: 425px;
+      width: 425px;
+      display: flex;
     }
-    .aboutme-wrapper h2,h3{
-        align-self: flex-start;
-        margin-left: 16px;
-    }
-    .aboutme-wrapper h2{
-        font-size: 70px;
-    }
-    .aboutme-wrapper h3{
-        font-size: 50px;
-    }
-    #skillsect-list{
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        
-    }
-    #skillsect-list li{
-        font-size: 25px;
-        
-    }
-    
 
-
-}
-@media screen and (min-width:2560px){
-    .aboutme-wrapper{
-        float: left;
-        height: 70vh;
-        width: 50%;
+    .aboutme-wrapper p {
+      align-self: flex-start;
     }
-    .wrapper{
+    .aboutme-wrapper h2,
+    .aboutme-wrapper h3 {
+      align-self: flex-start;
+      margin-left: 1rem;
+    }
+    .aboutme-wrapper h2 {
+      font-size: 70px;
+    }
+    .aboutme-wrapper h3 {
+      font-size: 50px;
+    }
+    #skillsect-list {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+    }
+    #skillsect-list li {
+      font-size: 25px;
+    }
+    .skillSection {
+      flex-direction: row;
+    }
+    .skillsect-card--1 {
+      margin-top: 0rem;
+    }
+  }
+  @media screen and (min-width: 2560px) {
+    .aboutme-wrapper {
+      float: left;
+      height: 70vh;
+      width: 50%;
+    }
+    .wrapper {
       float: right;
       height: 70vh;
-      width: 50%; 
+      width: 50%;
     }
-   #jozeif{
-       height: 625px;
-       width: 625px;
-       display: flex;
-   }
-  
-    .aboutme-wrapper p{
-        align-self: flex-start;
-        font-size: 35px;
-        
+    #jozeif {
+      height: 625px;
+      width: 625px;
+      display: flex;
     }
-    .aboutme-wrapper h2,h3{
-        align-self: flex-start;
-        margin-left: 16px;
+
+    .aboutme-wrapper p {
+      align-self: flex-start;
+      font-size: 35px;
     }
-    .aboutme-wrapper h2{
-        font-size: 90px;
+    .aboutme-wrapper h2,
+    .aboutme-wrapper h3 {
+      align-self: flex-start;
+      margin-left: 1rem;
     }
-    .aboutme-wrapper h3{
-        font-size: 70px;
+    .aboutme-wrapper h2 {
+      font-size: 90px;
     }
-    .skillSection{
-        height: 50vh;
+    .aboutme-wrapper h3 {
+      font-size: 70px;
+    }
+    .skillSection {
+      height: 50vh;
     }
     .about-title-bar h1 {
-        font-size: 100px;
-
+      font-size: 100px;
     }
-    #skillsect-list{
-        display: flex;
-        flex-direction: column;
-        align-self: flex-start;
-        
+    #skillsect-list {
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
     }
-    .skillSection{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #262626;
-        min-height: 100vh;
-        width: 100%;
-        
+    .skillSection {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      background-color: #262626;
+      min-height: 100vh;
+      width: 100%;
     }
-    #codeIcon,#backEndIcon,#OtherIcon{
-        display: none;
+    .skillsect-card--1 {
+      margin-top: 0rem;
     }
-    #skillsect-list li{
-        font-size: 25px;
-        
+    #skillsect-list li {
+      font-size: 25px;
     }
-    
+  }
 }
-
-   }

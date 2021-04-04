@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from 'mdbreact';
+import {Form,TextInput,TextArea, Button} from 'carbon-components-react';
 import emailjs from 'emailjs-com';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -28,11 +28,11 @@ class Contact extends Component {
     }
     sendEmail = (e) => {
         e.preventDefault();    //This is important, i'm not sure why, but the email won't send without it
-        emailjs.sendForm('jozeifgmail', 'template_j9EjEkVX', e.target, 'user_0IPhnqmLu1gsu74o3OgQK')
+        emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_USER_ID)
             .then((result) => {
                 goodnotify('success')
                 this.setState({ from_name: '', from_email: '', subject: '', message_html: '' })
-                console.log("Nice")
+              
             }, (error) => {
                 console.log(error.text)
                 errornotify('error')
@@ -43,38 +43,37 @@ class Contact extends Component {
 
     render() {
 
-
         return (
-
+            
             <div className="contact">
                 <div className="contact-title-bar">
                     <h1>Contact</h1>
                 </div>
+                <h2>Reach out and let's collaborate</h2>
+                <div className="contact-container" >
+                    
+                            
+                            <Form onSubmit={this.sendEmail} id="contact-form">
 
-                <MDBContainer>
-                    <MDBRow>
-                        <MDBCol style={{ margin: '30px 0px' }} lg="12">
-                            <form onSubmit={this.sendEmail} id="contact-form">
-                                <p className="h5 text-center mb-4">Let's Work Together</p>
-                                <div className="grey-text">
+                               
 
-                                    <MDBInput value={this.state.from_name} onChange={this.handleFields} label="Name" icon="user" group type="text" validate error="wrong"
+
+                                    <TextInput style={{marginBottom:'3rem'}} value={this.state.from_name} onChange={this.handleFields} labelText="Name" icon="user" group type="text" validate error="wrong"
                                         success="right" name="from_name" ref="fname" required />
 
-                                    <MDBInput value={this.state.from_email} onChange={this.handleFields} label="Type your email" icon="envelope" group type="email" validate error="wrong"
+                                    <TextInput style={{marginBottom:'3rem'}} value={this.state.from_email} onChange={this.handleFields} labelText="Email" icon="envelope" group type="email" validate error="wrong"
                                         success="right" name="from_email" ref="email" required />
 
-                                    <MDBInput value={this.state.subject} onChange={this.handleFields} label="Subject" icon="tag" group type="text" validate name="subject" ref="subj" required />
+                                    <TextInput style={{marginBottom:'3rem'}} value={this.state.subject} onChange={this.handleFields} labelText="Subject" icon="tag" group type="text" validate name="subject" ref="subj" required />
 
-                                    <MDBInput value={this.state.message_html} onChange={this.handleFields} type="textarea" rows="6" label="Your message" icon="pencil-alt" name="message_html" ref="text" required />
+                                    <TextArea value={this.state.message_html} onChange={this.handleFields} type="textarea" rows="6" labelText="Message" icon="pencil-alt" name="message_html" ref="text" required />
+                                
+                                <div style={{alignSelf:'flex-start',marginTop:'2rem'}}>
+                                    <Button type="submit" value="Send">Submit</Button>
                                 </div>
-                                <div className="text-center">
-                                    <MDBBtn type="submit" value="Send">Submit</MDBBtn>
-                                </div>
-                            </form>
-                        </MDBCol>
-                    </MDBRow>
-                </MDBContainer>
+                            </Form>
+                  
+                </div>
 
             </div >
         )

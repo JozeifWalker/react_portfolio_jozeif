@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-
-
 import "./about.css";
 import jozeif from "../../Images/jozeifwbw.png";
-
-import { BsCodeSlash } from 'react-icons/bs';
-import { BsServer } from 'react-icons/bs';
-import { BsWrench } from 'react-icons/bs';
-
+import {Tile}from 'carbon-components-react'
 
 
 class About extends Component {
@@ -27,47 +21,40 @@ class About extends Component {
 
 
                 <div className="skillSection">
-                    <h3 className="skillTitle">Skill Overview</h3>
+                  
 
-                    <BsCodeSlash id="codeIcon" />
-                    <div className="skillsect-card">
-                        <h2>Front End</h2>
+                {/* <h2 style={{textAlign:'left',color:'white'}}>Front End</h2> */}
+                    <Tile className="skillsect-card">
+                        
                         <ul id="skillsect-list" >
-                            <li>React/Redux</li>
+                            <li>React</li>
+                            <li>Redux</li>
                             <li>HTML/CSS</li>
                             <li>JavaScript</li>
-                            <li>XML(Android)</li>
                         </ul>
-                    </div>
+                    </Tile>
 
-                    <BsServer id="backEndIcon" />
-                    <div className="skillsect-card--1">
-                        <h2>Back End</h2>
+                     <div style={{width:'1rem'}}></div>
+                    <Tile className="skillsect-card--1">
+                        {/* <h2>Back End</h2> */}
+                        <ul id="skillsect-list" >
+                            
+                            <li>ExpressJS</li>
+                            <li>NodeJS</li>
+                            <li>Spring Boot</li>
+                            <li>Android(Java)</li>
+                        </ul>
+                    </Tile>
+                    <div style={{width:'1rem'}}></div>
+                    <Tile className="skillsect-card--2">
+                        {/* <h2>Back End</h2> */}
                         <ul id="skillsect-list" >
                             <li>MongoDB</li>
                             <li>MySQL</li>
-                            <li>ExpressJS</li>
-                            <li>NodeJS</li>
-                            <li>Java</li>
-                            <li>Android(Java)</li>
+                          
                         </ul>
-                    </div>
-                    <BsWrench id="OtherIcon" />
-                    <div className="skillsect-card--2">
-
-                        <h2>Other</h2>
-                        <ul id="skillsect-list" >
-
-                            <li>Adobe XD</li>
-                            <li>InVision</li>
-                            <li>GitHub</li>
-                            <li>Microsoft Technology Associate Certification</li>
-                            <li>CompTia Cloud Essentials Certification</li>
-
-                        </ul>
-
-
-                    </div>
+                    </Tile>
+                   
 
 
                 </div>
